@@ -45,7 +45,7 @@ if (isset($_POST['a']) && isset($_POST['calc']) && isset($_POST['b'])) {
 	</form>
 
 	<?php
-	if (isset($_POST['a']) && isset($_POST['calc']) && isset($_POST['b'])) {
+	if (!empty($result)) {
 		echo "<p>Résultat : <strong>$result</strong>  <small>($a $calc $b)</small></p>";
 	}
 	?>

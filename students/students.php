@@ -32,13 +32,26 @@
         <th>Age</th>
         <th>Email</th>
         <th>Langue</th>
-        <tbody>
-        </tbody>
         </thead>
+        <tbody>
+            <?php 
+            foreach ($students as $s): ?>
+                <tr>
+                <?php endforeach; ?>
+        </tbody>
     </table>
 <?php else: ?>
     <p>"Il n'y a pas d'étudiants enregistrés</p>
 <?php endif; ?>
 <h1>Formulaire</h1>
+<form method="post" action="students.php">
+    <pre>
+        prénom <input type="text" name="prenom">
+        nom <input type="text" name="prenom">
+        email <input type="text" name="prenom">
+        langue <input type="text" name="prenom">
+        <input type="submit" name="envoyer">
+    </pre>
+    </form>
 </body>
 </html>
