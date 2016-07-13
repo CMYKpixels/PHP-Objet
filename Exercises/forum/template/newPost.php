@@ -8,17 +8,15 @@
         unset($_SESSION['nouveau_post']['success']);
     }
     ?>
-<?php include_once ('../template/header.php') ?>
-
 <h2>Nouveau post</h2>
 
 <p>
 	Formulaire
 </p>
-<div class="alert alert-danger">
+<div class="hidden alert alert-danger">
 	<strong>Erreur!</strong> Ici un message
 </div>
-	<div class="alert alert-success">
+	<div class="hidden alert alert-success">
 		<strong>Validation!</strong>Ici un message de validation
 	</div>
 
