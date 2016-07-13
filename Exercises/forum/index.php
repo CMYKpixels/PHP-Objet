@@ -28,7 +28,7 @@
             include_once('template/inscription.php');
             break;
         case'postsList':
-            var_dump($_SESSION);
+//            var_dump($_SESSION);
             include_once('template/postsList.php');
             break;
         
