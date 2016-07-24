@@ -33,7 +33,7 @@
             die();
         }
     } else {
-        $res = connectionUser($email, $password);
+        $res = connexionUser($email, $password);
 //        var_dump($res);
 //        die();
         if ($res > 0) {
@@ -73,7 +73,7 @@
 //        $email    = $_POST['email'];
 //        $password = $_POST['password'];
 //
-//        $user     = connectionUser($email, $password);
+//        $user     = connexionUser($email, $password);
 //        if ($user != FALSE) {
 //            $_SESSION['user'] = $user;
 //

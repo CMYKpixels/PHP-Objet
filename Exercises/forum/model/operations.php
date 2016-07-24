@@ -1,19 +1,19 @@
 <?php
-    function getConnection ()
+    function getConnexion ()
     {
-        $connection = new PDO('mysql:host=localhost; dbname=forum; charset:UTF8', 'root', 'root');
-        $connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-        $connection->setAttribute(PDO::ATTR_EMULATE_PREPARES, FALSE);
+        $connexion = new PDO('mysql:host=localhost; dbname=blog; charset:UTF8', 'root', 'root');
+        $connexion->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+        $connexion->setAttribute(PDO::ATTR_EMULATE_PREPARES, FALSE);
 
-        return $connection;
+        return $connexion;
     }
 
-    function connectionUser ($email, $password)
+    function connexionUser ($email, $password)
     {
-        $connection = getConnection();
+        $connexion = getConnexion();
         // On effectue la requête SQL
         $query = "SELECT * FROM users WHERE email=:email AND password=:password";
-        $pdo   = $connection->prepare($query);
+        $pdo   = $connexion->prepare($query);
 
         $pdo->execute(array(
                           'email'    => $email,
@@ -29,7 +29,7 @@
         }
     }
 
-    function disconnectionUser ()
+    function disconnexionUser ()
     {
         unset ($_SESSION['aid']);
         session_destroy();
@@ -42,9 +42,9 @@
 
     function newUser ($userid, $username, $password, $email)
     {
-        $connection = getConnection();
+        $connexion = getConnexion();
         $query      = 'INSERT INTO users SET userid=:userid, username=:username, password=:password, email=:email';
-        $pdo        = $connection->prepare($query);
+        $pdo        = $connexion->prepare($query);
         $pdo->execute(array(
                           'userid'   => $userid,
                           'username' => $username,
@@ -57,9 +57,9 @@
 
     function newPost ($postid, $userid, $username, $title, $content)
     {
-        $connection = getConnection();
+        $connexion = getConnexion();
         $query      = 'INSERT INTO posts SET postid=:postid, userid=:userid, author=:username, title=:title, content=:content';
-        $pdo        = $connection->prepare($query);
+        $pdo        = $connexion->prepare($query);
         $pdo->execute(array(
                           'postid'   => $postid,
                           'userid'   => $userid,
