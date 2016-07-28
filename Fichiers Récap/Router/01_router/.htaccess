@@ -1,0 +1,31 @@
+#handles the errors the way we want to
+#ErrorDocument 404 http://alfonso.obbex.com/menu/home/home.php
+
+#Forbids the directories
+#Options -Indexes
+
+#defines which file is going to be read first
+#DirectoryIndex index.php amslib_router.php registration.php login.php
+
+#RewriteEngine On # Turn on the rewriting engine
+#RewriteRule ^home/?$ menu/home/home.php [NC,L] # Handle requests for "pet-care"
+#RewriteRule ^object/([0-9]+)/?$ menu/search/object_description.php?product_id=$1
+
+RewriteEngine On
+
+RewriteCond %{REQUEST_FILENAME} -f
+RewriteCond %{REQUEST_URI} (gif|png|jpg|jpeg|css|js|xml|pdf)$ [NC]
+RewriteRule ^(.*)$ - [L]
+
+# set the router base url, this is super important, the whole system is based on this
+RewriteRule . - [E=__AMSLIB_ROUTER_ACTIVE__:/]
+
+#    use utf-8 encoding for anything served text/plain or text/html
+AddDefaultCharset utf-8
+#    force utf-8 for a number of file formats
+AddCharset utf-8 .php .html .css .js .xml .json .rss .atom
+
+#    Perhaps you need to comment out -d from here or not, depends on your website
+RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^(.*)$ %{ENV:__AMSLIB_ROUTER_ACTIVE__}initiator.php?routed=true [L,QSA]

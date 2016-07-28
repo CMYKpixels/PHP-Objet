@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<package>
+    <router>
+        <path name="home">
+            <src lang="en_GB">/</src>
+            <resource>layout.html</resource>
+        </path>
+    </router>
+</package>

@@ -3,7 +3,8 @@
     class Chara
     {
         private $kick   = 50;
-        private $random = 50
+        private $random = 50;
+
         private $_round   = 1;
         private $_lifeBar = 750;
 
