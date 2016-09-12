@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<courses xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <course url="http://www.idem.html">
+        <заглавие>Up and Running with Symfony2 for PHP</заглавие>
+        <author>Alfonso</author>
+        <tag-line>Build PHP applications the modern way with Symfony2, a popular PHP MVC framework.</tag-line>
+        <user.level>Intermediate</user.level>
+        <dc:date>2016-08-21</dc:date>
+        <subjects>
+            <subject>PHP</subject>
+            <subject>Symfony</subject>
+        </subjects>
+    </course>
+    <course url="http://www.idembarcelona.eu">
+        <заглавие>Creating Secure PHP Websites</заглавие>
+        <author>Chris Thomas</author>
+        <tag-line>Learn how to meet the most important security challenges when developing websites with PHP.</tag-line>
+        <user.level>Intermediate</user.level>
+        <dc:date>2016-06-30</dc:date>
+        <subjects>
+            <subject>PHP</subject>
+        </subjects>
+    </course>
+</courses>

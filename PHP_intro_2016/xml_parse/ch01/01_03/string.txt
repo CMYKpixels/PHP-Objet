@@ -1,0 +1,12 @@
+$string = <<< END
+<cars>
+    <car>
+        <make>Ford</make>
+        <color>black</color>
+    </car>
+    <car>
+        <make>Toyota</make>
+        <color>white</color>
+    </car>
+</cars>
+END;

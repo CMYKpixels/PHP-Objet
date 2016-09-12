@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cars>
+  <car id="36">
+    <make>Ford</make>
+    <color>blue</color>
+  </car>
+  <car id="45">
+    <make>Chrysler</make>
+    <color>green &amp; black</color>
+  </car>
+  <car id="47">
+    <make>Toyota</make>
+    <color>white</color>
+  </car>
+</cars>

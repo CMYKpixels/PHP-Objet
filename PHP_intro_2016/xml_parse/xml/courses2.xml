@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<courses>
+    <course url="http://www.idem.html">
+        <title>Up and Running with Symfony2 for PHP</title>
+        <author>Alfonso</author>
+        <description>Build PHP applications the modern way with Symfony2, a popular PHP MVC framework.</description>
+        <level>Intermediate</level>
+        <pubdate>2016-08-21</pubdate>
+        <subjects>
+            <subject>PHP</subject>
+            <subject>Symfony</subject>
+        </subjects>
+    </course>
+    <course url="http://www.idembarcelona.eu">
+        <title>Creating Secure PHP Websites</title>
+        <author>Chris Thomas</author>
+        <description>Learn how to meet the most important security challenges when developing websites with PHP.</description>
+        <level>Intermediate</level>
+        <pubdate>2016-06-30</pubdate>
+        <subjects>
+            <subject>MySQL</subject>
+            <subject>PHP</subject>
+            <subject>Linux</subject>
+            <subject>Apache</subject>
+            <subject>LAMP</subject>
+        </subjects>
+    </course>
+    <course url="http://www.antimatterstudios.html">
+        <title>Creating Secure PHP Websites</title>
+        <author>Chris Thomas</author>
+        <description>Learn how to meet the most important security challenges when developing websites with PHP.</description>
+        <level>Intermediate</level>
+        <pubdate>2016-06-30</pubdate>
+        <subjects>
+            <subject>PHP</subject>
+        </subjects>
+    </course>
+</courses>

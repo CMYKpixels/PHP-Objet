@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<courses>
+    <course>
+        <title>Up and Running with Symfony2 for PHP</title>
+        <author>Jon Peck</author>
+        <description>Build PHP applications the modern way with Symfony2, a popular PHP MVC framework.</description>
+        <level>Advanced</level>
+        <pubdate>2014-08-21</pubdate>
+        
+    </course>
+    <course>
+        <title>Creating Secure PHP Websites</title>
+        <author>Kevin Skoglund</author>
+        <description>Learn how to meet the most important security challenges when developing websites with PHP.</description>
+        <level>Advanced</level>
+        <pubdate>2014-06-30</pubdate>
+        
+    </course>
+</courses>

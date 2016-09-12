@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<connexion>
+    <user>root</user>
+    <password>root</password>
+    <database>blog</database>
+</connexion>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<courses xmlns="http://www.example.com/courses">
+    <course url="http://www.idem.html">
+        <title>Up and Running with Symfony2 for PHP</title>
+        <author>Alfonso</author>
+        <description>Build PHP applications the modern way with Symfony2, a popular PHP MVC framework.</description>
+        <level>Intermediate</level>
+        <date>2016-08-21</date>
+        <subjects>
+            <subject>PHP</subject>
+            <subject>Symfony</subject>
+        </subjects>
+    </course>
+    <course url="http://www.idembarcelona.eu">
+        <title>Creating Secure PHP Websites</title>
+        <author>Chris Thomas</author>
+        <description>Learn how to meet the most important security challenges when developing websites with PHP.</description>
+        <level>Intermediate</level>
+        <date>2016-06-30</date>
+        <subjects>
+            <subject>PHP</subject>
+        </subjects>
+    </course>
+</courses>

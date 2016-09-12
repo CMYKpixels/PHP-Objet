@@ -1,0 +1,36 @@
+body {
+    background-color: #fff;
+    color: #1B1B1B;
+    font-family: "Segoe UI", Candara, "Trebuchet MS", Verdana, sans-serif;
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+article {
+    margin-left: 40px;
+}
+h2 {
+    margin-bottom: 0.25em;
+    clear: left;
+}
+h2 > a {
+    text-decoration: none;
+    color: #92CDCF;
+}
+h2 > a:hover, h2 > a:active, h2 > a:focus {
+    color: #445878;
+}
+h2, p {
+    width: 550px;
+}
+figure + p {
+    margin: 0;
+    font-size: 85%;
+    font-style: italic;
+}
+figure {
+    margin: 0 15px 0 0;
+    float: left;
+}
+a > img {
+    border: none;
+}

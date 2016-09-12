@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<courses xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:media="http://search.yahoo.com/mrss/">
+    <course media:url="http://www.idem.html">
+        <title>Installing Apache, MySQL, and PHP</title>
+        <author>Alfonso</author>
+        <dc:description>Learn how to install and configure Apache, MySQL, and PHP</dc:description>
+        <level>Intermediate</level>
+        <dc:date>2016-08-20</dc:date>
+        <subjects>
+            <dc:subject>MySQL</dc:subject>
+            <dc:subject>PHP</dc:subject>
+            <dc:subject>Linux</dc:subject>
+            <dc:subject>Apache</dc:subject>
+        </subjects>
+    </course>
+    <course media:url="http://www..html">
+        <title>Up and Running with Symfony2 for PHP</title>
+        <author>Alfonso</author>
+        <dc:description>Build PHP applications the modern way with Symfony2, a popular PHP MVC framework.</dc:description>
+        <level>Intermediate</level>
+        <dc:date>2014-08-21</dc:date>
+        <subjects>
+            <dc:subject>PHP</dc:subject>
+            <dc:subject>Symfony</dc:subject>
+        </subjects>
+    </course>
+    <course media:url="http://www.idembarcelona.html">
+        <title>Creating Secure PHP Websites</title>
+        <author>Chris Thomas</author>
+        <dc:description>Learn how to meet the most important security challenges when developing websites with PHP.</dc:description>
+        <level>Intermediate</level>
+        <dc:date>2014-06-30</dc:date>
+        <subjects>
+            <dc:subject>PHP</dc:subject>
+        </subjects>
+    </course>
+    <course media:url="http://www.idem/158372-2.html">
+        <title>Up and Running with Linux for PHP Developers</title>
+        <author>Pierre Mar</author>
+        <dc:description>Need a powerful development environment? Learn how to quickly install and configure a virtual
+            Linux web server on your Mac or Windows computer.</dc:description>
+        <level>Intermediate</level>
+        <pubdate>2016-06-13</pubdate>
+        <subjects>
+            <dc:subject>MySQL</dc:subject>
+            <dc:subject>PHP</dc:subject>
+            <dc:subject>Linux</dc:subject>
+            <dc:subject>Apache</dc:subject>
+            <dc:subject>LAMP</dc:subject>
+        </subjects>
+    </course>
+</courses>

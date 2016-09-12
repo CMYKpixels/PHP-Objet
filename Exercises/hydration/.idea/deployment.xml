@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData">
+    <serverData>
+      <paths name="UwAmp">
+        <serverdata>
+          <mappings>
+            <mapping deploy="\PHP%20Objet\Exercises\hydration" local="$PROJECT_DIR$" web="/PHP%20Objet/Exercises/hydration/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="notejs-nologin">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+      <paths name="notesjs-vanilla">
+        <serverdata>
+          <mappings>
+            <mapping local="$PROJECT_DIR$" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>

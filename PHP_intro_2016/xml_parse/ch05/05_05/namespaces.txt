@@ -1,0 +1,3 @@
+﻿media: 'http://search.yahoo.com/mrss/'
+dc: 'http://purl.org/dc/elements/1.1/'
+ns1: 'http://www.example.com/ns1'

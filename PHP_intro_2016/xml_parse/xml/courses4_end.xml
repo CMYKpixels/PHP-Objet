@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<courses>
+    <course url="http://www.lynda.com/Symfony-tutorials/Up-Running-Symfony2-PHP/160060-2.html">
+        <title>Up &amp; Running with Symfony2 for PHP</title>
+        <author>Jon Peck</author>
+        <description>Build PHP applications the modern way with Symfony2, a popular PHP MVC framework.</description>
+        <level>Intermediate</level>
+        <pubdate>2014-08-21</pubdate>
+        <subjects>
+            <subject>PHP</subject>
+            <subject>Symfony</subject>
+        </subjects>
+    </course>
+    <course url="http://www.lynda.com/PHP-tutorials/Creating-Secure-PHP-Websites/133321-2.html">
+        <title>Creating Secure PHP Websites</title>
+        <author>Kevin Skoglund</author>
+        <description>Learn how to meet the most important security challenges when developing websites with PHP.</description>
+        <level>Intermediate</level>
+        <pubdate>2014-06-30</pubdate>
+        <subjects>
+            <subject>PHP</subject>
+        </subjects>
+    </course>
+</courses>

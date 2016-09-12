@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<courses xmlns:ns1="http://www.example.com/ns1" xmlns:media="http://search.yahoo.com/mrss/" xmlns:dc="http://purl.org/dc/elements/1.1/">
+  <ns1:course xmlns:ns1="http://www.example.com/ns1" xmlns:media="http://search.yahoo.com/mrss/" media:url="http://www.lynda.com/Symfony-tutorials/Up-Running-Symfony2-PHP/160060-2.html">
+    <ns1:title>Up &amp; Running with Symfony2 for PHP</ns1:title>
+    <ns1:author>Jon Peck</ns1:author>
+    <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2014-08-21</dc:date>
+  </ns1:course>
+  <ns1:course xmlns:ns1="http://www.example.com/ns1" xmlns:media="http://search.yahoo.com/mrss/" media:url="http://www.lynda.com/PHP-tutorials/Creating-Secure-PHP-Websites/133321-2.html">
+    <ns1:title>Creating Secure PHP Websites</ns1:title>
+    <ns1:author>Kevin Skoglund</ns1:author>
+    <dc:date xmlns:dc="http://purl.org/dc/elements/1.1/">2014-06-30</dc:date>
+  </ns1:course>
+</courses>
