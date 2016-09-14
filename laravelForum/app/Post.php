@@ -8,11 +8,18 @@
 
     namespace App;
 
-
     use Illuminate\Database\Eloquent\Model;
 
+
     class Post extends Model
-    {
-        protected $primaryKey = 'user_id';
-        protected $table      = 'posts';
-    }
+        {
+            protected $primaryKey = 'user_id';
+            protected $table      = 'posts';
+            protected $fillable   = array('title', 'content', 'user_id');
+            public    $timestamps = TRUE;
+
+            public function Author()
+                {
+                    return $this->belongsTo('User', 'user_id');
+                }
+        }

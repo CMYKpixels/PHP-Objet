@@ -1,0 +1,15 @@
+Index: app/Http/routes.php
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- app/Http/routes.php	(revision )
++++ app/Http/routes.php	(revision )
+@@ -29,7 +29,6 @@
+             'uses'=>'PostsController@viewPost',
+             'as'=>'viewPost',
+             )
+-
+     );
+ 
+     Route::get(

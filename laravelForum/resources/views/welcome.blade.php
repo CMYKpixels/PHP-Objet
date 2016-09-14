@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.UI')
 
 @section('content')
 <div class="container">
@@ -9,6 +9,7 @@
 
                 <div class="panel-body">
                     Your Application's Landing Page.
+                    welcome.blade.php.
                 </div>
             </div>
         </div>

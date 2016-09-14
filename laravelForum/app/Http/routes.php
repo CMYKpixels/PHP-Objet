@@ -13,24 +13,42 @@
 
     use App\Post;
     use Illuminate\Support\Facades\Route;
+    use Illuminate\Support\Facades\Redirect;
 
-    //    use Illuminate\Support\Facades\Route;
 
-    Route::get(
-        '/', function()
+    Route::get('/',
+        function()
         {
-            return view('home');
-        }
-    );
+            return view('welcome');
+        });
 
 
-//    Add new Post
-    Route::post(
-        '/post/{id}', function($id)
+    Route::get('/test',
+        function()
         {
-            //
-        }
-    );
+            return view('layouts.UI');
+        });
+
+
+//    show individual Post
+    Route::get('/post/{id}',
+               array(
+                   'uses' => 'PostsController@viewPost',
+                   'as'   => 'viewPost',
+                   function($post_view) {
+                       return Redirect::route('viewPost',['id'=>$post_view]);
+                   },
+               ));
+
+
+
+
+//    show all Posts
+    Route::get('/postList',
+               array(
+                   'uses' => 'PostsController@postList',
+                   'as'   => 'postList',
+               ));
 
 
     Route::auth();

@@ -1,5 +1,5 @@
 <?php
-
+0
     /*
     |--------------------------------------------------------------------------
     | Application Routes
@@ -126,14 +126,12 @@
         }
     );
 
-
     //Création des routes
 //    Route::get(
 //        '/where', function() {
 //        return Redirect::route('cherryPop');
 //    }
 //    );
-
 
     //Création des routes
 //    Route::get(
@@ -152,6 +150,7 @@
 //        'uses' => 'PaintingsController@serviceNewPainting',
 //    )
 //    );
+
 
     Route::get(
         '/random/{id}',
@@ -178,7 +177,8 @@
         return 'deleted';
     });
 
-
+    Route::get('/home', 'HomeController@index');
+    Route::get('testController', 'PaintingsController@index');
     Route::get('/painting/create', 'PaintingsController@createView');
 
     Route::post(
@@ -188,7 +188,4 @@
                           )
     );
 
-    Route::get('testController', 'PaintingsController@index');
     Route::auth();
-
-    Route::get('/home', 'HomeController@index');

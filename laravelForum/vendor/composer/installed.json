@@ -3253,5 +3253,115 @@
         ],
         "description": "Symfony DomCrawler Component",
         "homepage": "https://symfony.com"
+    },
+    {
+        "name": "frameworks/jquery",
+        "version": "2.1.4",
+        "version_normalized": "2.1.4.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/frameworks/jquery.git",
+            "reference": "ef9c4fe9fcb23914bba6ec6d32c556e4a38a0fd9"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/frameworks/jquery/zipball/ef9c4fe9fcb23914bba6ec6d32c556e4a38a0fd9",
+            "reference": "ef9c4fe9fcb23914bba6ec6d32c556e4a38a0fd9",
+            "shasum": ""
+        },
+        "time": "2015-10-09 00:55:51",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "description": "jQuery JavaScript Library",
+        "homepage": "http://jquery.com"
+    },
+    {
+        "name": "frameworks/bootstrap",
+        "version": "3.2.0",
+        "version_normalized": "3.2.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/frameworks/bootstrap.git",
+            "reference": "1753846a527cf3b3e449ce821d0016171428f527"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/frameworks/bootstrap/zipball/1753846a527cf3b3e449ce821d0016171428f527",
+            "reference": "1753846a527cf3b3e449ce821d0016171428f527",
+            "shasum": ""
+        },
+        "require": {
+            "frameworks/jquery": "*"
+        },
+        "time": "2014-06-26 19:43:13",
+        "type": "library",
+        "installation-source": "dist",
+        "notification-url": "https://packagist.org/downloads/"
+    },
+    {
+        "name": "bosnadev/repositories",
+        "version": "0.13",
+        "version_normalized": "0.13.0.0",
+        "source": {
+            "type": "git",
+            "url": "https://github.com/bosnadev/repository.git",
+            "reference": "3a289a137e27ac6b795852a0d72c509a51b70a26"
+        },
+        "dist": {
+            "type": "zip",
+            "url": "https://api.github.com/repos/bosnadev/repository/zipball/3a289a137e27ac6b795852a0d72c509a51b70a26",
+            "reference": "3a289a137e27ac6b795852a0d72c509a51b70a26",
+            "shasum": ""
+        },
+        "require": {
+            "illuminate/console": "^5.2",
+            "illuminate/database": "^5.2",
+            "illuminate/filesystem": "^5.2",
+            "illuminate/support": "^5.2",
+            "php": ">=5.4.0"
+        },
+        "require-dev": {
+            "mockery/mockery": "dev-master@dev"
+        },
+        "time": "2016-08-19 13:21:55",
+        "type": "library",
+        "extra": {
+            "branch-alias": {
+                "dev-master": "0.x-dev"
+            }
+        },
+        "installation-source": "dist",
+        "autoload": {
+            "psr-4": {
+                "Bosnadev\\": "src/Bosnadev/"
+            }
+        },
+        "notification-url": "https://packagist.org/downloads/",
+        "license": [
+            "MIT"
+        ],
+        "authors": [
+            {
+                "name": "Maarten Paauw",
+                "email": "maartenpaauw@gmail.com"
+            },
+            {
+                "name": "Mirza Pasic",
+                "email": "mirza@bosnadev.com"
+            }
+        ],
+        "description": "Laravel Repositories",
+        "homepage": "https://bosnadev.com",
+        "keywords": [
+            "database",
+            "eloquent",
+            "laravel",
+            "repositories",
+            "repository"
+        ]
     }
 ]

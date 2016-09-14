@@ -1,4 +1,4 @@
-@extends('layouts.app')
+@extends('layouts.UI')
 
 @section('content')
 <div class="container">
@@ -9,6 +9,7 @@
 
                 <div class="panel-body">
                     You are logged in!
+                    home.blade.php.
                 </div>
             </div>
         </div>

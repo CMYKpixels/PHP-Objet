@@ -8,37 +8,45 @@
 
     namespace App\Http\Controllers;
 
+    use App\Post;
     use App\Repositories\PostRepository;
     use Illuminate\Support\Facades\Redirect;
+    use Illuminate\Support\Facades\Route;
+
 
     class PostsController extends Controller
     {
         private $post;
 
-        public function __construuct(PostRepository $post)
+        public function __construct(PostRepository $post)
         {
             $this->post = $post;
         }
 
-        public function index($post_id)
+        public function postList()
         {
-            $posts = $this->post->getPostById($post_id);
-            dd($posts);
+            $postList = Post::all();
 
-            return Redirect::route('posts');
+            return view('postList', ['postList' => $postList]);
         }
 
-        public function createView()
+
+        public function viewPost($id)
         {
-            return view('posts');
+            $post_view = $this->post->ViewPostById($id);
+//            dd($post_view);
+
+            return Redirect::route('/viewPost', ['id'=>$post_view]);
         }
 
+        
         public function serviceNewPost(Request $request)
-        {
-            $this->validate(
-                $request, [
-//          TODO: Request builder or ORM for postsList
-                        ]
-            );
-        }
+                {
+                    $this->validate(
+                        $request, [
+//          TODO: Request builder or ORM for posts List
+                                ]
+                    );
+                }
+
     }
