@@ -9,9 +9,10 @@
     namespace App\Http\Controllers;
 
     use App\Post;
+    use App\Http\Controllers\Auth\AuthController;
     use App\Repositories\PostRepository;
+    use Illuminate\Support\Facades\Input;
     use Illuminate\Support\Facades\Redirect;
-    use Illuminate\Support\Facades\Route;
 
 
     class PostsController extends Controller
@@ -33,20 +34,27 @@
 
         public function viewPost($id)
         {
+            $postList  = Post::all();
             $post_view = $this->post->ViewPostById($id);
+
 //            dd($post_view);
 
-            return Redirect::route('/viewPost', ['id'=>$post_view]);
+            return view('post', ['post' => $post_view[0], 'postList' => $postList]);
         }
 
-        
-        public function serviceNewPost(Request $request)
-                {
-                    $this->validate(
-                        $request, [
-//          TODO: Request builder or ORM for posts List
-                                ]
-                    );
-                }
+
+        public function serviceNewPost()
+        {
+//            $user_id = Auth::user()->id;
+//            $postList  = Post::all();
+
+
+            $post          = new Post();
+            $post->user_id = Input::get('name');
+
+
+            return Redirect::route('new_post');
+
+        }
 
     }

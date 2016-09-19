@@ -101,6 +101,7 @@
                            <li><a href="index2.html">Parallax Slider</a></li>
                          </ul>
                       </li>
+						{{--
                         <!-- Refer Bootstrap navbar doc -->
                       <li class="dropdown">
                          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages #1 <b class="caret"></b></a>
@@ -113,13 +114,44 @@
                            <li><a href="timeline.html">Timeline</a></li>
                            <li><a href="404.html">404</a></li>
                            <li><a href="faq.html">FAQ</a></li>
-                             @if (Auth::guest())
-                                 <li><a href="{{url('register')}}">Register</a></li>
-                                 <li><a href="{{url('login')}}">Login</a></li>
-                             @else
-                                 <li class="dropdown">
+                         </ul>
+                      </li>
+                      --}}
+
+                        {{--<li class="dropdown">
+                           <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages #2<b class="caret"></b></a>
+                           <ul class="dropdown-menu">
+                             <li><a href="coming-soon.html">Coming Soon</a></li>
+                             <li><a href="features-4.html">Features</a></li>
+                             <li><a href="statement.html">Statement</a></li>
+                             <li><a href="tasks.html">Tasks</a></li>
+                             <li><a href="resume.html">Resume</a></li>
+                             <li><a href="projects.html">Projects</a></li>
+                             <li><a href="make-post.html">Make Post</a></li>
+                             <li><a href="events.html">Events</a></li>
+                             <li><a href="error-log.html">Error Log</a></li>
+                           </ul>
+                        </li>
+                        --}}
+                        <li><a href="service.html">Service</a></li>
+                      <li><a href="aboutus.html">About Us</a></li>
+{{--                      <li class="dropdown">
+                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
+                         <ul class="dropdown-menu">
+                         </ul>
+                       </li>
+--}}
+                      <li><a href="portfolio.html">Portfolio</a></li>
+                      <li><a href="contactus.html">Contact</a></li>
+                    </ul>
+						<ul class="nav navbar-nav navbar-right">
+							@if (Auth::guest())
+								<li><a href="{{url('register')}}">Register</a></li>
+								<li><a href="{{url('login')}}">Login</a></li>
+							@else
+								<li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
-                               aria-expanded="false">
+							   aria-expanded="false">
                                 {{ Auth::user()->name }} <span class="caret"></span>
                             </a>
 
@@ -127,45 +159,18 @@
                                 <li><a href="{{ url('/logout') }}"><i class="fa fa-btn fa-sign-out"></i>Logout</a></li>
                             </ul>
                         </li>
-                             @endif
-                         </ul>
-                      </li>
-                      <li class="dropdown">
-                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages #2<b class="caret"></b></a>
-                         <ul class="dropdown-menu">
-                           <li><a href="coming-soon.html">Coming Soon</a></li>
-                           <li><a href="features-4.html">Features</a></li>
-                           <li><a href="statement.html">Statement</a></li>
-                           <li><a href="tasks.html">Tasks</a></li>
-                           <li><a href="resume.html">Resume</a></li>
-                           <li><a href="projects.html">Projects</a></li>
-                           <li><a href="make-post.html">Make Post</a></li>
-                           <li><a href="events.html">Events</a></li>
-                           <li><a href="error-log.html">Error Log</a></li>
-                         </ul>
-                      </li>
-                      <li><a href="service.html">Service</a></li>
-                      <li><a href="aboutus.html">About Us</a></li>
-                      <li class="dropdown">
-                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <b class="caret"></b></a>
-                         <ul class="dropdown-menu">
-                           <li><a href="blog-2.html">Blog #1</a></li>
-                           <li><a href="blog-4.html">Blog #1</a></li>
-                           <li><a href="blog-single.html">Blog Single</a></li>
-                         </ul>
-                       </li>
-
-                      <li><a href="portfolio.html">Portfolio</a></li>
-                      <li><a href="contactus.html">Contact</a></li>
-                    </ul>
+							@endif
+						</ul>
                   </nav>
                 </div>
             </div>
 
 <!--/ Navigation bar ends -->
-
+    <div class="content">
+    <div class="container">
 @yield('content')
-
+		</div>
+        </div>
 {{--@include('layouts.footer')--}}
 
 <!-- Social -->

@@ -1,0 +1,34 @@
+acme_blog_homepage:
+    path:       /
+    defaults:   {_controller: AcmeBlogBundle:Prop:index}
+#
+#art_gallery_random:
+#    path:     /random
+#    defaults: {_controller: AcmeBlogBundle:Prop:random}
+
+acme_blog_random:
+    path:       /random/{id}/page.{format}
+    defaults:   {_controller: AcmeBlogBundle:Prop:random}
+    requirements:
+        id:     \d+
+        format: html|rss
+
+acme_blog_request:
+    path:       /request/{id}
+    defaults:   {_controller: AcmeBlogBundle:Prop:request}
+
+acme_blog_where:
+    path:       /where
+    defaults:   {_controller: AcmeBlogBundle:Prop:where}
+
+acme_blog_create_blueprint:
+    path:       /create
+    defaults:   {_controller: AcmeBlogBundle:Prop:create}
+
+acme_blog_edit_blueprint:
+    path:       /edit
+    defaults:   {_controller: AcmeBlogBundle:Prop:edit}
+
+acme_blog_blueprint:
+    path:       /delete
+    defaults:   {_controller: AcmeBlogBundle:Prop:delete}

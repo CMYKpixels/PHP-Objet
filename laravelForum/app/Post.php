@@ -13,7 +13,7 @@
 
     class Post extends Model
         {
-            protected $primaryKey = 'user_id';
+            protected $primaryKey = 'id';
             protected $table      = 'posts';
             protected $fillable   = array('title', 'content', 'user_id');
             public    $timestamps = TRUE;

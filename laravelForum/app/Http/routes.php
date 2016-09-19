@@ -35,11 +35,13 @@
                array(
                    'uses' => 'PostsController@viewPost',
                    'as'   => 'viewPost',
-                   function($post_view) {
-                       return Redirect::route('viewPost',['id'=>$post_view]);
-                   },
                ));
 
+    Route::get('/post',
+               array(
+                   'uses' => 'PostsController@postView',
+                   'as'   => 'postView',
+               ));
 
 
 
@@ -50,6 +52,18 @@
                    'as'   => 'postList',
                ));
 
+
+    Route::get('/form',
+               function()
+               {
+                   return view('form');
+               });
+
+    Route::get('/serviceNewPost',
+               array(
+                   'uses'=>'PostsController@serviceNewPost',
+                   'as'=>'new_post'
+               ));
 
     Route::auth();
 

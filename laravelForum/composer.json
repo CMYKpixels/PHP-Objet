@@ -9,7 +9,8 @@
         "laravel/framework": "5.2.*",
         "frameworks/bootstrap": "3.2.0",
         "fzaninotto/faker": "^1.6",
-        "bosnadev/repositories": "^0.13.0"
+        "bosnadev/repositories": "^0.13.0",
+        "laravelcollective/html": "5.*"
     },
     "require-dev": {
         "mockery/mockery": "0.9.*",

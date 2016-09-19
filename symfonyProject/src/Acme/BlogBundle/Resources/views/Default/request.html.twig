@@ -1,0 +1,28 @@
+{% extends 'AcmeBlogBundle:Default:layout.html.twig' %}
+
+{% block title %}
+	Request Template {{ name }}
+{% endblock %}
+
+{% block content %}
+	<h4>{{ name }}</h4>
+	
+	<div>{% for t in team %}
+		
+			<div>{{ t }}</div>
+		
+		{% endfor %}
+		<hr>
+		
+		{#Array associatif#}
+		{% for key, a in team %}
+			<div>
+			{{ key }}=>{{ a|upper }}
+		</div>
+		{% endfor %}
+	</div>
+	<h5>{{ "now" | date("m/d/Y") }}</h5>
+	{% include 'AcmeBlogBundle:Default:include.html.twig' %}
+{% endblock %}
+
+

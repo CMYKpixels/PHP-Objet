@@ -27,7 +27,7 @@
 
 //            QueryBuilder (Jointure)
             return DB::table('posts')
-                     ->join('users', 'user.id', '=', 'posts.user.id')
+                     ->join('users', 'users.id', '=', 'posts.user_id')
                      ->where('posts.id', $id)
                      ->select('posts.*', 'users.name')
                      ->get();
